@@ -32,6 +32,8 @@ This project integrates multiple AI models to perform various tasks:
 
 These models work together to provide a comprehensive news analysis, summarization, and audio output pipeline.
 
+⚠️ **Note:** This project requires a `.env` file where users must add their own **Google Gemini API keys**. I have used **three free Gemini API keys** to ensure uninterrupted comparisons, but you should add your own keys in the `.env` file.
+
 ---
 
 ## Installation
@@ -73,7 +75,17 @@ To use this application on another computer, follow these steps:
    pip install -r requirements.txt
    ```
 
-5. **Run the Application**
+5. **Add Your Gemini API Keys**
+   - Create a `.env` file in the root directory of the project.
+   - Add your Gemini API keys in the following format:
+     ```plaintext
+     GEMINI_API_KEY_1=your_first_api_key
+     GEMINI_API_KEY_2=your_second_api_key
+     GEMINI_API_KEY_3=your_third_api_key
+     ```
+   - These keys are used to perform article comparisons.
+
+6. **Run the Application**
    - **For CLI Version:**
      ```bash
      python app.py
@@ -86,7 +98,7 @@ To use this application on another computer, follow these steps:
      ```
      This will open the application in a web browser.
 
-6. **Troubleshooting**
+7. **Troubleshooting**
    - Ensure all dependencies are correctly installed.
    - If `torch` or `transformers` fail, try upgrading them:
      ```bash
@@ -145,17 +157,8 @@ Visit the live app: **[Hugging Face Deployment](https://huggingface.co/spaces/sh
 
 ---
 
-## Author
-
-👤 **Shubham Prakash**  
-- GitHub: [shubhamprakash108](https://github.com/ShubhamPrakash108)  
-- LinkedIn: [Shubham Prakash](https://www.linkedin.com/in/shubham-prakash-6a731a227/)  
-- Kaggle: [Shubham Prakash](https://www.kaggle.com/shubham2prakash)  
-
----
 
 ## License
 
 This project is licensed under the MIT License.  
 Feel free to use and improve it!
-
