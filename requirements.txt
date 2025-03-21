@@ -15,6 +15,7 @@ pydub
 bertopic
 sentence_transformers 
 streamlit
-lxml[html_clean]
-lxml[html_clean]
+lxml_html_clean
 google-generativeai
+lxml[html_clean]
+
