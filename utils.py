@@ -175,9 +175,8 @@ def audio_output(text, number=1):
             waveform = output.squeeze().cpu().numpy()
 
         sample_rate = 16000  
-        
-        # Ensure the directory exists
-        output_dir = "audios"  # Use relative path
+    
+        output_dir = "audios" 
         os.makedirs(output_dir, exist_ok=True)
         
         output_file = os.path.join(output_dir, f"file_number_{number}.wav")
